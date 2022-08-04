@@ -1,10 +1,10 @@
+import shadows from "@mui/material/styles/shadows"
 
 export const PLAYER = {
     A:"A",
     B:"B",
     NONE: "NONE"
 }
-
 
 export const BoardConfig = [
     {
@@ -885,30 +885,30 @@ export const Direction = {
 
 export const BoardDetail = [
     {},
-    {pos:1,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:4,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:5,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:3,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:6,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:7,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:8,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:9,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:10,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:11,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:12,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:13,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:14,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:15,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:16,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:17,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:18,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:19,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:20,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:21,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:22,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:23,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:24,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
-    {pos:2,isOccupied:false, PLAYER:PLAYER.NONE, elementID:""},
+    {pos:1, parentPos:1,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:2,top:null,bottom:10}, matchNodes:[[1,2,3],[1,10,22]],isInMatch:false},
+    {pos:4, parentPos:29,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:5,top:null,bottom:11}, matchNodes:[[4,5,6],[4,11,19]],isInMatch:false},
+    {pos:5, parentPos:33,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:4,right:6,top:2,bottom:8}, matchNodes:[[2,5,8],[4,5,6]],isInMatch:false},
+    {pos:3, parentPos:13,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:2,right:null,top:null,bottom:15}, matchNodes:[[3,15,24],[1,2,3]],isInMatch:false},
+    {pos:6, parentPos:37,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:5,right:null,top:null,bottom:14}, matchNodes:[[4,5,6],[6,14,21]],isInMatch:false},
+    {pos:7, parentPos:57,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:8,top:null,bottom:12}, matchNodes:[[7,12,16],[7,8,9]],isInMatch:false},
+    {pos:8, parentPos:59,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:7,right:9,top:5,bottom:null}, matchNodes:[[7,8,9],[7,12,16]],isInMatch:false},
+    {pos:9, parentPos:61,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:8,right:null,top:null,bottom:13}, matchNodes:[[9,13,18],[7,8,9]],isInMatch:false},
+    {pos:10, parentPos:79,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:11,top:1,bottom:22}, matchNodes:[[10,11,12],[1,10,22]],isInMatch:false},
+    {pos:11, parentPos:81,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:10,right:12,top:4,bottom:19}, matchNodes:[[10,11,12],[4,11,19]],isInMatch:false},
+    {pos:12, parentPos:83,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:11,right:null,top:7,bottom:16}, matchNodes:[[10,11,12],[7,12,16]],isInMatch:false},
+    {pos:13, parentPos:87,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:14,top:9,bottom:18}, matchNodes:[[13,14,15],[9,13,18]],isInMatch:false},
+    {pos:14, parentPos:89,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:13,right:15,top:6,bottom:21}, matchNodes:[[13,14,15],[14,6,21]],isInMatch:false},
+    {pos:15, parentPos:91,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:14,right:null,top:3,bottom:24}, matchNodes:[[13,14,15],[3,15,24]],isInMatch:false},
+    {pos:16, parentPos:109,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:17,top:12,bottom:null}, matchNodes:[[16,17,18],[7,12,16]],isInMatch:false},
+    {pos:17, parentPos:111,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:16,right:18,top:null,bottom:20}, matchNodes:[[16,17,18],[17,20,23]],isInMatch:false},
+    {pos:18, parentPos:113,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:17,right:null,top:13,bottom:null}, matchNodes:[[9,13,18],[16,17,18]],isInMatch:false},
+    {pos:19, parentPos:133,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:20,top:11,bottom:null}, matchNodes:[[19,20,21],[4,11,19]],isInMatch:false},
+    {pos:20, parentPos:137,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:19,right:21,top:17,bottom:23}, matchNodes:[[19,20,21],[17,20,23]],isInMatch:false},
+    {pos:21, parentPos:141,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:20,right:null,top:14,bottom:null}, matchNodes:[[6,14,21],[19,20,21]],isInMatch:false},
+    {pos:22, parentPos:157,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:null,right:23,top:10,bottom:null}, matchNodes:[[22,23,24],[1,10,22]],isInMatch:false},
+    {pos:23, parentPos:163,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:22,right:24,top:20,bottom:null}, matchNodes:[[22,23,24],[17,20,23]],isInMatch:false},
+    {pos:24, parentPos:169,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:23,right:null,top:15,bottom:null}, matchNodes:[[22,23,24],[3,15,24]],isInMatch:false},
+    {pos:2, parentPos:7,isOccupied:false, PLAYER:PLAYER.NONE, elementID:"", direction: {left:1,right:3,top:null,bottom:5}, matchNodes:[[1,2,3],[2,5,8]],isInMatch:false},
 ]
 
 export const SOLDIER_CONFIG = {
@@ -941,27 +941,27 @@ export const COUNT = {
 
 
 export const SOLDIER_A = [
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:1,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:2,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:3,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:4,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:5,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:6,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:7,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:8,position:0, bgColor: "green"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:9,position:0, bgColor: "green"}
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:1,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:2,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:3,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:4,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:5,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:6,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:7,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:8,position:0, bgColor: "white"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:9,position:0, bgColor: "white"}
 ]
 
 export const SOLDIER_B = [
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:1,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:2,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:3,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:4,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:5,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:6,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:7,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:8,position:0, bgColor: "red"},
-    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:9,position:0, bgColor: "red"}
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:1,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:2,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:3,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:4,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:5,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:6,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:7,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:8,position:0, bgColor: "black"},
+    {...SOLDIER_CONFIG,STATUS:"DORMANT",index:9,position:0, bgColor: "black"}
 ]
 
 

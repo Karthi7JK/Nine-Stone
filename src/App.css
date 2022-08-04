@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  width: 500px;
+  margin: auto;
+  padding: 45px 0;
+  background: #004d40;
+  border-radius: 20px;
+  margin-top: 50px;
+  background: linear-gradient(45deg, #1a237e, #0d47a1);
+  background: linear-gradient(75deg, #009688, #1a237e, #f44336);
+  box-shadow: 0px 0px 4px #000000;
 }
 
 .App-logo {
@@ -51,10 +60,12 @@
 }
 
 .hole {
-  background: linear-gradient(45deg, #484643, #569756);
+  background: linear-gradient(45deg, #484643, #283593);
+  /*background: linear-gradient(75deg, #3f51b5, #673ab7, #f44336);*/
   border-radius: 50%;
   position: relative;
   border-radius: 50%;
+  color: white;
 }
 
 .line {
@@ -71,18 +82,18 @@
 
 .horLine .child {
   width: 100%;
-  height: 1%;
+  height: 4%;
   position: absolute;
-  background: #4a3932;
-  top: 49%;
+  background: white;
+  top: 46%;
 }
 
 .verLine .child {
-  background: #4a3932;
-  width: 1%;
+  background: white;
+  width: 4%;
   height: 100%;
   position: absolute;
-  left: 49%;
+  left: 46%;
 }
 
 .icon {
@@ -104,4 +115,56 @@
   left: 5px;
   top: 5px;
   border-radius: 50%;
+}
+
+.hgWhite {
+  background: linear-gradient(45deg, #87888b, #ffffff);
+  box-shadow : 0px 0px 2px #423434;
+}
+
+.hgBlack {
+  background: linear-gradient(45deg, #353333, #1f1f1f);
+  box-shadow: 0px 0px 2px #423434;
+}
+
+.soldier:hover {
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.noClick {
+  pointer-events:none;
+}
+
+.rotate {
+  border-radius: 45%;
+  animation: rotateAnim 2s infinite linear;
+}
+
+.label {
+  position: fixed;
+}
+
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+
+@keyframes rotate360 {
+  to { transform: rotate(360deg); }
+}
+
+.rotateAnim { 
+  border-radius: 35%;
+  /*animation: 1s rotate360 infinite linear;*/
+  background: linear-gradient(45deg, #aba398, #2d896f);
+}
+
+.cutHighlight {
+  border-radius: 35%;
+  background: linear-gradient(45deg, #d7d7d7, #290fff);
+}
+
+.noAnim {
+  animation: none;
 }
